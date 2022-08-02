@@ -1,0 +1,143 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Fight Game</title>
+    <link rel="icon" type="image/x-icon" href="./img/weapon_icon.png">
+   
+</head>
+<body>
+    <!-- red container div -->
+    <section class="section_1">
+    <div class="main">
+        <!-- smaller red container div -->
+        <div class="red_smaller">
+            <!-- player health -->
+            <div class="player_health">
+                <div class="under"></div>
+                <div class="over" id="playerHealth"></div>
+            </div>
+
+            <!--  Time -->
+            <div class="Time" id="timer">
+                10
+            </div>
+
+            <!-- enemy health -->
+            <div class="enemy_health">
+                <div class="under"></div>
+                <div class="over" id="enemyHealth"></div>
+            </div>
+           
+        </div>
+
+        <!-- smaller strong container div -->
+        <div class="strong_smaller">
+
+            <!-- player strong -->
+            <div class="player_strong">
+                <div class="under"></div>
+                <div class="over" id="playerPower"></div>
+            </div>
+
+            <!-- animate storn -->
+            <div class="animate_strong"></div>
+
+            <!-- enemy strong -->
+            <div class="enemy_strong">
+                <div class="under"></div>
+                <div class="over" id="enemyPower"></div>
+            </div>
+            
+        </div>
+             
+        <div class="display_text" id="displayText">
+            Tie
+        </div>
+       
+        <canvas class="display_game"></canvas>
+    </div>
+    <div class="description"> 
+        <div class="player_description">
+           <ul>
+                <img class="ItemImg" src="./img/Artur_king/Death_artur_02.gif" alt="">
+                <li class="listItem" style="background-image: url(./img/icons/left-arrow-variant-key-on-keyboard.png);">Movin left</li>
+                <li class="listItem" style="background-image: url(./img/icons/keyboard-key-pointing-to-right.png);">Movin right</li>
+                <li class="listItem" style="background-image: url(./img/icons/keyboard-key-arrow-up.png);">Jump</li>
+                <li class="listItem" style="background-image: url(./img/icons/arrow-down-key-on-keyboard.png);">Attack</li>
+                <li class="listItem">Passive - critical attack</li>
+           </ul>
+        </div>
+        <div class="enemy_description">
+            <ul>
+                <img class="ItemImg" src="./img/Martial Hero 3/icon_varvar.png" alt="">
+                <li class="listItem" style="background-image: url(./img/icons/keyboard-key-a.png);">Movin left</li>
+                <li class="listItem" style="background-image: url(./img/icons/key-d-of-a-keyboard.png);">Movin right</li>
+                <li class="listItem" style="background-image: url(./img/icons/key-w-of-a-computer-keyboard.png);">Jump</li>
+                <li class="listItem" style="background-image: url(./img/icons/space.png);">Attack</li>
+                <li class="listItem">Passive - critical attack</li>
+           </ul>
+        </div>
+    </div> 
+    </section>
+
+    <!-- section 2 my bio game -->
+
+    <section class="section_2">
+        <div class="bio_game">
+            <div class="text">
+                <h2>Functional</h2>
+                <ul class="listItem">
+                    <li>Fihter game</li>
+                    <li>2 player game</li>
+                    <li>Jump</li>
+                    <li>Run</li>
+                    <li>Attack</li>
+                    <li>2d animate</li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="text">
+                <h2>Interesting</h2>
+                <ul class="listItem">
+                    <li>Draw image into gif</li>
+                    <li>Mechanics critical attack</li>
+                    <li>Mechanics turn character left and right</li>
+                    <li>Mechanics jump gravity</li>
+                    <li>Mechanics canvas bord  left  and right</li>
+                    <li>Flexbox technology</li>
+                </ul>
+            </div>
+            <div class="text">
+                <h2>Instruments</h2>
+                <ul class="listItem">
+                    <li>Javascript</li>
+                    <li>Html 5</li>
+                    <li>Css 3</li>
+                    <li>Flexbox</li>
+                    <li>Git, Github</li>
+                    <li>2D animate</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="text">Create by Ipatii Dmytro - 2022</div>
+    </footer>
+    
+    
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/classes.js"></script>
+    <script src="./js/game_sprites.js"></script>
+    <script src="./index.js"></script>
+   
+</body>
+
+
